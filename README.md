@@ -3,6 +3,16 @@
 
 This is the final assignment for the Meta course "Back-End Developer Capstone" at coursera.
 
+## For Reviewers
+
+The endpoints you need to check are:
+
+1. auth/users/
+2. auth/token/login/
+3. restaurant/menu/ - 
+4. restaurant/booking/
+
+For your convenience I've prepared a [Postman collection](/Dinmukhamet%20-%20Coursera%20Assignment.postman_collection.json)
 
 
 ## Installation 
