@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "little-lemon"
+version = "0.1.0"
+description = ""
+authors = ["Dinmukhamet <d.igisinov@stud.satbayev.university>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.7"
+djangorestframework = "^3.14.0"
+django-environ = "^0.9.0"
+mysqlclient = "^2.1.1"
+gunicorn = "^20.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.0.1"
+isort = "^5.12.0"
+black = "^23.1.0"
+ruff = "^0.0.252"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

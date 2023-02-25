@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    command: "bash little-lemon/start.sh"
+    container_name: lemon-api
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app/little-lemon
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.32
+    container_name: lemon-db
+    env_file:
+      - .db.env
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+      - mysql_config:/etc/mysql
+
+volumes:
+  mysql:
+  mysql_config:
