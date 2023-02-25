@@ -12,7 +12,7 @@ class Menu(models.Model):
         verbose_name_plural = _("menus")
 
     def __str__(self):
-        return self.title
+        return f"{self.title} : {str(self.price)}"
 
 
 class Booking(models.Model):
