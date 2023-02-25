@@ -2,6 +2,11 @@ from rest_framework import generics, viewsets
 from .models import Booking, Menu
 from .serializers import BookingSerializer, MenuSerializer
 from rest_framework.permissions import IsAuthenticated
+from django.shortcuts import render
+
+
+def index(request):
+    return render(request, "index.html", {})
 
 
 class MenuItemsView(generics.ListCreateAPIView):
